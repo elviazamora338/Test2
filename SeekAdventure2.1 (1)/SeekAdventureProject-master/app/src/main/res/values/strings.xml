@@ -6,6 +6,7 @@
     <string name="header">Discover</string>
     <string name="subheading">Popular</string>
     <string name="subheading2">Recommended</string>
+    <string name="travelLog">Travel Log</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

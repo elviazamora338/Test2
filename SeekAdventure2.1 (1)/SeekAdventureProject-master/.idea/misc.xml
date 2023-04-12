@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ifc172/OneDrive - The University of Texas-Rio Grande Valley/SeekAdventure-EZ/SeekAdventure2.1 (1)/SeekAdventureProject-master/app/src/main/res/layout/activity_main.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/ifc172/OneDrive - The University of Texas-Rio Grande Valley/SeekAdventure-EZ/SeekAdventure2.1 (1)/SeekAdventureProject-master/app/src/main/res/layout/activity_main_menu.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/ifc172/OneDrive - The University of Texas-Rio Grande Valley/SeekAdventure-EZ/SeekAdventure2.1 (1)/SeekAdventureProject-master/app/src/main/res/layout/fragment_create_journal.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/ifc172/OneDrive - The University of Texas-Rio Grande Valley/SeekAdventure-EZ/SeekAdventure2.1 (1)/SeekAdventureProject-master/app/src/main/res/layout/fragment_favorites.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/ifc172/OneDrive - The University of Texas-Rio Grande Valley/SeekAdventure-EZ/SeekAdventure2.1 (1)/SeekAdventureProject-master/app/src/main/res/layout/fragment_home.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/ifc172/OneDrive - The University of Texas-Rio Grande Valley/SeekAdventure-EZ/SeekAdventure2.1 (1)/SeekAdventureProject-master/app/src/main/res/layout/fragment_location.xml" value="0.24592391304347827" />
         <entry key="..\:/Users/ifc172/OneDrive - The University of Texas-Rio Grande Valley/SeekAdventure-EZ/SeekAdventure2.1 (1)/SeekAdventureProject-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.37222222222222223" />
       </map>
     </option>
