@@ -62,7 +62,7 @@
         android:layout_height="77dp"
         android:layout_gravity="center"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="624dp"
+        android:layout_marginTop="584dp"
         android:layout_marginEnd="56dp"
         android:backgroundTint="@color/teal_200"
         android:fontFamily="@font/playfair_display"
