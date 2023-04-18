@@ -39,6 +39,10 @@ public class UploadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload);
 
+        saveButton = findViewById(R.id.saveButton);
+        uploadImage = findViewById(R.id.uploadImage);
+        String imageURL = "";
+
         et_date = findViewById(R.id.et_date);
         selectLocation = findViewById(R.id.selectLocation);
         uploadMoments = findViewById(R.id.uploadMoments);

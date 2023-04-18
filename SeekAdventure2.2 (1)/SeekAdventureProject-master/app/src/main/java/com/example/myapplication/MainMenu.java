@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ import com.example.myapplication.Fragments.SettingsFragment;
 import com.example.myapplication.Fragments.ShareFragment;
 import com.example.myapplication.databinding.ActivityMainMenuBinding;
 import com.google.android.gms.common.annotation.NonNullApi;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.Calendar;
@@ -132,6 +134,7 @@ public class MainMenu extends AppCompatActivity {
 //                datePickerDialog.show();
 //            }
 //        });
+
 
 
     }

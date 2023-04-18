@@ -79,7 +79,9 @@
                 app:headerLayout="@layout/nav_header"
                 app:menu="@menu/nav_menu"
                 app:itemIconTint="@color/light_blue"
-                app:itemTextColor="@color/black"/>
+                app:itemTextColor="@color/black">
+
+            </com.google.android.material.navigation.NavigationView>
 
         </androidx.drawerlayout.widget.DrawerLayout>
 
