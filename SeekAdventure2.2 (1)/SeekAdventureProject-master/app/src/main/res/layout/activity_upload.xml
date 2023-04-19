@@ -28,11 +28,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Travel Log"
+                android:text="New Travel Log"
                 android:textSize="20sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:fontFamily="@font/playfair_display"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Data"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -41,21 +49,21 @@
                 android:id="@+id/uploadImage"
                 android:layout_marginTop="10dp"/>
 
-            <EditText
-                android:id="@+id/et_date"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:hint="Select Date"
-                android:textSize="20sp" />
+<!--            <EditText-->
+<!--                android:id="@+id/et_date"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:hint="Select Date"-->
+<!--                android:textSize="20sp" />-->
 
-            <EditText
-                android:id="@+id/selectLocation"
-                android:layout_width="241dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:hint="Select Location"
-                android:textSize="20sp" />
+<!--            <EditText-->
+<!--                android:id="@+id/selectLocation"-->
+<!--                android:layout_width="241dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:hint="Select Location"-->
+<!--                android:textSize="20sp" />-->
 
             <EditText
                 android:layout_width="match_parent"
@@ -90,23 +98,21 @@
                 android:gravity="start|center_vertical"
                 android:textColor="@color/light_blue"/>
 
-            <RatingBar
-                android:id="@+id/ratingBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingTop="10dp" />
+<!--            <RatingBar-->
+<!--                android:id="@+id/ratingBar"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:paddingTop="10dp" />-->
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Save"
                 android:id="@+id/saveButton"
-                app:cornerRadius = "30dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/playfair_display"
-                android:backgroundTint="@color/light_blue"
-                />
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius = "20dp"/>
 
 
         </LinearLayout>

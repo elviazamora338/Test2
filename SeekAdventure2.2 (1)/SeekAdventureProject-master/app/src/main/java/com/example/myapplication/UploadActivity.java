@@ -1,5 +1,12 @@
 package com.example.myapplication;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -11,12 +18,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -26,11 +27,14 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.text.DateFormat;
+import java.util.Calendar;
+
 public class UploadActivity extends AppCompatActivity {
 
     ImageView uploadImage;
     Button saveButton;
-    EditText et_date, selectLocation, uploadMoments, uploadFacts, uploadActivities;
+    EditText uploadFacts, uploadMoments, uploadActivities;
     String imageURL;
     Uri uri;
 
@@ -39,22 +43,18 @@ public class UploadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload);
 
-        saveButton = findViewById(R.id.saveButton);
         uploadImage = findViewById(R.id.uploadImage);
-        String imageURL = "";
-
-        et_date = findViewById(R.id.et_date);
-        selectLocation = findViewById(R.id.selectLocation);
-        uploadMoments = findViewById(R.id.uploadMoments);
         uploadFacts = findViewById(R.id.uploadFacts);
+        uploadMoments = findViewById(R.id.uploadMoments);
         uploadActivities = findViewById(R.id.uploadActivities);
+        saveButton = findViewById(R.id.saveButton);
 
         ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 new ActivityResultCallback<ActivityResult>() {
                     @Override
                     public void onActivityResult(ActivityResult result) {
-                        if (result.getResultCode() == Activity.RESULT_OK) {
+                        if (result.getResultCode() == Activity.RESULT_OK){
                             Intent data = result.getData();
                             uri = data.getData();
                             uploadImage.setImageURI(uri);
@@ -82,7 +82,8 @@ public class UploadActivity extends AppCompatActivity {
         });
     }
 
-    public void saveData() {
+    public void saveData(){
+
         StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Android Images")
                 .child(uri.getLastPathSegment());
 
@@ -97,7 +98,7 @@ public class UploadActivity extends AppCompatActivity {
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
                 Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
-                while (!uriTask.isComplete()) ;
+                while (!uriTask.isComplete());
                 Uri urlImage = uriTask.getResult();
                 imageURL = urlImage.toString();
                 uploadData();
@@ -105,34 +106,39 @@ public class UploadActivity extends AppCompatActivity {
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
-            public void onFailure(Exception e) {
+            public void onFailure(@NonNull Exception e) {
                 dialog.dismiss();
             }
         });
     }
 
+    public void uploadData(){
 
-            public void uploadData(){
-                String moments = uploadMoments.getText().toString();
-                String facts = uploadFacts.getText().toString();
-                String activities = uploadActivities.getText().toString();
+        String moments = uploadMoments.getText().toString();
+        String facts = uploadFacts.getText().toString();
+        String activities = uploadActivities.getText().toString();
 
-                DataClass dataClass = new DataClass(moments, facts, activities, imageURL);
+        DataClass dataClass = new DataClass(moments, facts, activities, imageURL);
 
-                FirebaseDatabase.getInstance().getReference("Create New Journal").child(moments)
-                        .setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(Task<Void> task) {
-                        if (task.isSuccessful()){
-                            Toast.makeText(UploadActivity.this, "Saved", Toast.LENGTH_SHORT).show();
-                            finish();
-                        }
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(Exception e) {
-                        Toast.makeText(UploadActivity.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
-                    }
-                });
+        //We are changing the child from title to currentDate,
+        // because we will be updating title as well and it may affect child value.
+
+        String currentDate = DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
+
+        FirebaseDatabase.getInstance().getReference("Android Tutorials").child(currentDate)
+                .setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()){
+                    Toast.makeText(UploadActivity.this, "Saved", Toast.LENGTH_SHORT).show();
+                    finish();
+                }
             }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(UploadActivity.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 }

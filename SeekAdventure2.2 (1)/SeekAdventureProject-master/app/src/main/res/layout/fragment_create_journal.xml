@@ -5,13 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:foregroundTint="@color/light_gray"
-    tools:context=".Fragments.CreateJournalFragment">
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="397dp"
-        android:layout_height="119dp"
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -19,24 +18,56 @@
         android:layout_marginStart="7dp"
         android:layout_marginTop="133dp"
         android:layout_marginEnd="6dp"
-        android:layout_marginBottom="408dp"
+        android:layout_marginBottom="422dp"
         android:fontFamily="@font/playfair_display"
         android:text="Recent Travel Logs"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="35sp" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="401dp"
+        android:layout_height="464dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="-51dp"
+        android:scrollbars="vertical" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="417dp"
+        android:focusable="false"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search..."
+        app:searchHintIcon="@null">
+
+    </androidx.appcompat.widget.SearchView>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="314dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="92dp"
-        android:clickable="true"
-        android:src="@drawable/ic_baseline_add_24" />
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/light_blue"
+        android:src="@drawable/ic_baseline_add_24"
+        app:tint="@color/white" />
 
 </RelativeLayout>

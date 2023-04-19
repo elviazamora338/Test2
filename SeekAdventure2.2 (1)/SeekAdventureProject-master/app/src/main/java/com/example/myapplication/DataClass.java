@@ -1,34 +1,45 @@
 package com.example.myapplication;
 
+
 public class DataClass {
-    private String dataTitle;
-    private String dataDesc;
-    private String dataLang;
+
+    private String dataMoments;
+    private String dataFacts;
+    private String dataActivities;
     private String dataImage;
+    private String key;
 
-    public String getDataTitle(){
-        return dataTitle;
+    public String getKey() {
+        return key;
     }
 
-    public String getDataDesc(){
-        return dataDesc;
+    public void setKey(String key) {
+        this.key = key;
     }
 
-    public String getDataLang(){
-        return dataLang;
+    public String dataMoments() {
+        return dataMoments;
     }
 
-    public String getDataImage(){
+    public String dataFacts() {
+        return dataFacts;
+    }
+
+    public String dataActivities() {
+        return dataActivities;
+    }
+
+    public String getDataImage() {
         return dataImage;
     }
 
-
-    public DataClass(String dataTitle, String dataDesc, String dataLang, String dataImage){
-        this.dataTitle = dataTitle;
-        this.dataDesc = dataDesc;
-        this.dataLang = dataLang;
+    public DataClass(String dataMoments, String dataFacts, String dataActivities, String dataImage) {
+        this.dataMoments = dataMoments;
+        this.dataFacts = dataFacts;
+        this.dataActivities = dataActivities;
         this.dataImage = dataImage;
     }
+    public DataClass(){
 
-
+    }
 }
