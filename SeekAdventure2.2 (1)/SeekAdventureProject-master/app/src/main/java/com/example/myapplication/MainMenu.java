@@ -1,12 +1,9 @@
 package com.example.myapplication;
 
-import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -18,19 +15,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.myapplication.Fragments.AboutFragment;
-import com.example.myapplication.Fragments.CreateJournalFragment;
-import com.example.myapplication.Fragments.FavoritesFragment;
-import com.example.myapplication.Fragments.HomeFragment;
-import com.example.myapplication.Fragments.LocationFragment;
-import com.example.myapplication.Fragments.SettingsFragment;
-import com.example.myapplication.Fragments.ShareFragment;
 import com.example.myapplication.databinding.ActivityMainMenuBinding;
-import com.google.android.gms.common.annotation.NonNullApi;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-
-import java.util.Calendar;
 
 public class MainMenu extends AppCompatActivity {
 
@@ -60,6 +47,14 @@ public class MainMenu extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, UploadActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         // Fragments for bottom navigation bar
         replaceFragment(new HomeFragment());
@@ -77,7 +72,7 @@ public class MainMenu extends AppCompatActivity {
                     replaceFragment(new FavoritesFragment());
                     break;
                 case R.id.create:
-                    replaceFragment(new CreateJournalFragment());
+                    replaceFragment( new CreateJournalFragment());
                     break;
             }
 
