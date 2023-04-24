@@ -27,6 +27,7 @@ android {
         dataBinding = true
         viewBinding = true
     }
+    compileSdkVersion 32
 }
 
 dependencies {
@@ -42,6 +43,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:20.0.1'
 
     implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0' // Image slider (step 2)
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
 
 
     testImplementation 'junit:junit:4.13.2'

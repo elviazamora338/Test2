@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
@@ -55,6 +56,14 @@ public class MainMenu extends AppCompatActivity {
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_nav, R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
+        // Button to create a new journal
+        fab.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, UploadActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         // com.example.myapplication.Fragments for bottom navigation bar

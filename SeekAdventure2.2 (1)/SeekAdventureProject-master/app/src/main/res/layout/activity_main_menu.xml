@@ -82,9 +82,8 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/fragment_container">
+                    android:id="@+id/fragment_container"/>
 
-                </FrameLayout>
 
             </LinearLayout>
 
@@ -111,6 +110,10 @@
         android:background="@color/light_gray"
         android:orientation="vertical"
         tools:context=".MainMenu">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
     </RelativeLayout>

@@ -18,14 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button getStarted = findViewById(R.id.getStarted);
 
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this, UploadActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-
         Intent secondIntent = new Intent(this, MainMenu.class);
 
         getStarted.setOnClickListener(v ->

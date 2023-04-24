@@ -10,4 +10,7 @@
     <color name="light_blue">#85A9BA</color>
     <color name="dark_blue">#46759d</color>
     <color name="teal_200">#336b87</color>
+    <color name="marigold">#FDD771</color>
+    <color name="yellow">#FDDF8E</color>
+
 </resources>

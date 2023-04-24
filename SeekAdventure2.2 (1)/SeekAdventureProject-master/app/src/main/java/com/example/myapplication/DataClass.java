@@ -3,11 +3,14 @@ package com.example.myapplication;
 
 public class DataClass {
 
+    private String title;
     private String dataMoments;
     private String dataFacts;
     private String dataActivities;
     private String dataImage;
     private String key;
+    private String date;
+    private String location;
 
     public String getKey() {
         return key;
@@ -17,15 +20,17 @@ public class DataClass {
         this.key = key;
     }
 
-    public String dataMoments() {
+    public String getDataTitle() { return title; }
+
+    public String getDataMoments() {
         return dataMoments;
     }
 
-    public String dataFacts() {
+    public String getDataFacts() {
         return dataFacts;
     }
 
-    public String dataActivities() {
+    public String getDataActivities() {
         return dataActivities;
     }
 
@@ -33,11 +38,22 @@ public class DataClass {
         return dataImage;
     }
 
-    public DataClass(String dataMoments, String dataFacts, String dataActivities, String dataImage) {
+    public String getDataDate() {
+        return date;
+    }
+
+    public String getDataLocation() {
+        return location;
+    }
+
+    public DataClass(String title, String dataMoments, String dataFacts, String dataActivities, String dataImage, String date, String location) {
+        this.title = title;
         this.dataMoments = dataMoments;
         this.dataFacts = dataFacts;
         this.dataActivities = dataActivities;
         this.dataImage = dataImage;
+        this.date = date;
+        this.location = location;
     }
     public DataClass(){
 
