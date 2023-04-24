@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray"
+    android:backgroundTint="@color/light_gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/app_name"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/seekAdventureLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekAdventureLogo"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="190dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/barlow_condensed_medium"
+        android:text="@string/app_slogan"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673" />
+
+    <ImageView
+        android:id="@+id/seekAdventureLogo"
+        android:layout_width="373dp"
+        android:layout_height="409dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="103dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/logo"
+        android:keepScreenOn="false"
+        android:src="@drawable/seek_adventure_logo"
+        android:textDirection="firstStrongRtl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693"
+        app:srcCompat="@drawable/seek_adventure_logo" />
+
+    <Button
+        android:id="@+id/getStarted"
+        android:layout_width="272dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/playfair_display"
+        android:gravity="center"
+        android:text="@string/getStarted_button"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:clickable="true"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.126"-->
+<!--        app:srcCompat="@drawable/ic_baseline_add_24" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
