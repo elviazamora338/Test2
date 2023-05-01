@@ -8,6 +8,7 @@
     android:backgroundTint="@color/light_gray"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/appName"
         android:layout_width="wrap_content"
@@ -56,6 +57,19 @@
         app:layout_constraintVertical_bias="0.693"
         app:srcCompat="@drawable/seek_adventure_logo" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="-51dp"
+        android:clickable="true"
+        android:scrollbars="vertical" />
+
     <Button
         android:id="@+id/getStarted"
         android:layout_width="272dp"
@@ -74,18 +88,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:id="@+id/fab"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:clickable="true"-->
-<!--        android:visibility="visible"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.126"-->
-<!--        app:srcCompat="@drawable/ic_baseline_add_24" />-->
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fab"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:clickable="true"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.126"-->
+    <!--        app:srcCompat="@drawable/ic_baseline_add_24" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

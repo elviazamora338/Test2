@@ -16,8 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-<!--        fix image-->
-
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/recImage"
             android:layout_width="60dp"

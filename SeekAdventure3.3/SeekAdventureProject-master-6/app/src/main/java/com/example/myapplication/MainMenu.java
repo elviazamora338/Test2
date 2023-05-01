@@ -129,7 +129,7 @@ public class MainMenu extends AppCompatActivity {
 
         // Fragments for bottom navigation bar
         replaceFragment(new HomeFragment());
-        binding.bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId()) {
 

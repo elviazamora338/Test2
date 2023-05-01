@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">SeekAdventure</string>
+    <string name="app_email">seekadventure@gmail.com</string>
+    <string name="app_slogan">Work, Travel, Save, Repeat</string>
+    <string name="getStarted_button">Get Started</string>
+    <string name="logo">logo</string>
+    <string name="header">Discover</string>
+    <string name="header2">Travel Log</string>
+    <string name="subheading">Popular</string>
+    <string name="subheading2">Recommended</string>
+    <string name="subheading3">Favorites</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="createButton"> + Create Journal</string>
+    <string name="travel_menu">Journey on the way!</string>
+    <string name="moments">Fun Moments:</string>
+    <string name="weather">Weather:</string>
+    <string name="transport">Transportation:</string>
+    <string name="fun_facts">Fun Facts: </string>
+    <string name="Search">Show Map </string>
+    <string name="Location">Location: </string>
+    <string name="Date">Date: </string>
+    <string name="BestMoments">My Favorite </string>
+    <string name="Activities">Activities:</string>
+    <string name="Attractions">Popular Attractions:</string>
+    <string name="Weather">When to go:</string>
+    <string name="Crime">Crime Rate:</string>
+
+    <string-array name="destination_item_names_txt">
+        <item>Glacier National Park, Montana</item>
+        <item>Maui, Hawaii</item>
+        <item>Dublin, Ireland</item>
+        <item>Vancouver, Canada</item>
+        <item>Orlando, Florida</item>
+        <item>South Island, New Zealand</item>
+    </string-array>
+
+    <string-array name="destination_item_desc_txt">
+        <item>The country\'s 10th national park, Montana\'s Glacier preserves 1 million acres of glacier-carved peaks and valleys, pristine turquoise lakes and streams,
+            and dense ancient forests for all to enjoy. Learn more about the Crown of the Continent as we celebrate this iconic national park. Source: DOI</item>
+        <item>Maui, known also as “The Valley Isle,” is the second largest Hawaiian island. The island beloved for its world-famous beaches, the sacred ʻĪao Valley, views of migrating
+            humpback whales (during winter months), farm-to-table cuisine and the magnificent sunrise and sunset from Haleakalā. Source: GoHawaii</item>
+        <item>Dublin is a warm and welcoming city, known for the friendliness of its people and famous for its craic (“crack”)—that mixture of repartee,
+            humour, intelligence, and acerbic and deflating insight that has attracted writers, intellectuals, and
+            visitors for centuries. It has faded grandeur and a comfortably worn sense. Source: Britannica</item>
+        <item>The City of Vancouver is a coastal, seaport city on the mainland of British Columbia.
+            Located on the western half of the Burrard Peninsula, Vancouver is bounded to the north by English Bay
+            and the Burrard Inlet and to the south by the Fraser River. Source: Vancouver</item>
+        <item>Orlando is home to iconic skyscrapers, sports centers, theatres, art galleries, shopping centers and parks.
+            It boasts a great restaurant and nightlife scene, and it hosts an array of festivals, parades and high-profile events, too. Source: TheTopVillas</item>
+        <item>New Zealand is a country of stunning and diverse natural beauty: jagged mountains, rolling pasture land,
+            steep fiords, pristine trout-filled lakes, raging rivers, scenic beaches, and active volcanic zones. Source: WikiTravel</item>
+    </string-array>
+
+    <string-array name="destination_item_crime_txt">
+        <item>HIGH</item>
+        <item>MED</item>
+        <item>MED</item>
+        <item>MED</item>
+        <item>MED</item>
+        <item>LOW</item>
+    </string-array>
+
+    <string-array name="destination_item_attract_txt">
+        <item>Going-To-The-Sun Road, Saint Mary Lake,
+            Trail of Cedars</item>
+        <item>Snorkeling, Historic Lahaina Town, Whale Watching, Luau</item>
+        <item>Dublin Castle, Trinity College,
+            Afternoon Tea Vintage Bus Trip, Christ Church Cathedral</item>
+        <item>Granville Market, Capilano Suspension Bridge Park,
+            Grouse Mountain, Cycling in Stanley Park</item>
+        <item>Walt Disney World Resort, I-Drive NASCAR Indoor Kart Racing,
+            Wonderworks, Kennedy Space Center</item>
+        <item>Nelson Lakes National Park, Hanmer Springs,
+            Milford Sound, Castle Hill, Christchurch</item>
+    </string-array>
+
+    <string-array name="destination_item_weather_txt">
+        <item>Summer</item>
+        <item>Spring, Autumn</item>
+        <item>Summer</item>
+        <item>Spring</item>
+        <item>Spring</item>
+        <item>Winter</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

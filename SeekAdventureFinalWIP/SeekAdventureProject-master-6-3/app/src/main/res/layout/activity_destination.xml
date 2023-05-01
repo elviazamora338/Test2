@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyDestinationView.DestinationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="29dp"
+            app:menu_colorNormal="@color/light_blue"
+            app:menu_colorPressed="@color/light_blue"
+            app:menu_fab_size="normal"
+            app:menu_icon="@drawable/baseline_read_more_24"
+            app:menu_openDirection="up"
+            app:menu_showShadow="true">
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display"
+            android:text="TextView"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@color/light_blue"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/dImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/descTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:paddingBottom="5dp"
+            android:text="description"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/attractions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="@string/Attractions"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/attractTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="@string/Attractions"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="@string/Weather"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/weatherTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/crimeRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/alegreya_sans"
+            android:background="@color/light_blue"
+            android:text="@string/Crime" />
+
+        <TextView
+            android:id="@+id/crimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</RelativeLayout>

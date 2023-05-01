@@ -13,6 +13,8 @@ public class DetailActivity extends AppCompatActivity {
 
     TextView detailDate, detailTitle, detailMoments, detailFacts, detailActivities, detailLocation;
     ImageView detailImage;
+    String key = "";
+    String imageUrl ="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

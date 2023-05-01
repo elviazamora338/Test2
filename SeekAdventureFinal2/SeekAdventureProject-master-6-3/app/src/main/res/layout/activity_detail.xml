@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyJournalView.DetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/playfair_display"
+                android:padding="5dp"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="30sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@drawable/journal_border"
+                android:maxWidth="400px"
+                android:maxHeight="100px"
+                android:minWidth="250px"
+                android:minHeight="100px"
+                android:padding="5dp"
+                android:src="@drawable/uploadimage">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/detailDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Date"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="I went to..."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detailLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/momentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="My best moments were..."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detailMoments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moments"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/factsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Fun Facts..."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detailFacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facts"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activitiesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Activities I did..."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detailActivities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activities"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:menu_fab_size="normal"
+            app:menu_colorNormal="@color/light_blue"
+            app:menu_colorPressed="@color/light_blue"
+            app:menu_icon="@drawable/ic_baseline_list_24"
+            app:menu_openDirection="up"
+            app:menu_showShadow="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="29dp">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteButton"
+                android:src="@drawable/ic_baseline_delete_24"
+                app:fab_showShadow="true"
+                app:fab_colorNormal="@color/red"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editButton"
+                android:src="@drawable/baseline_edit_24"
+                app:fab_showShadow="true"
+                app:fab_colorNormal="@color/green"
+                app:fab_size="mini">
+
+            </com.github.clans.fab.FloatingActionButton>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

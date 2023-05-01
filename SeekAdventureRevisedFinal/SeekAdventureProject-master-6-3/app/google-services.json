@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "124046147289",
+    "project_id": "seek-adventure-4d5ec",
+    "storage_bucket": "seek-adventure-4d5ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124046147289:android:d0dbe9c02cfb3ebcfcc8c8",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124046147289-847mvv7tlomdvsl5eto7k858laa60jlg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByNOu5mZ1zsBQpVPnbN4W29BVQAdU7RQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124046147289-847mvv7tlomdvsl5eto7k858laa60jlg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

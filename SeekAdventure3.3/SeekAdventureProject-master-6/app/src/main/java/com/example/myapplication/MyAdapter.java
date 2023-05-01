@@ -18,7 +18,7 @@ import com.example.myapplication.Fragments.CreateJournalFragment;
 
 import java.util.List;
 
-public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<MyViewHolder>{
     private Context context;
     private List<DataClass> dataList;
 
@@ -67,7 +67,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
         return dataList.size();
     }
 }
-
 class MyViewHolder extends RecyclerView.ViewHolder{
 
     ImageView recImage;
@@ -85,7 +84,5 @@ class MyViewHolder extends RecyclerView.ViewHolder{
         recFacts = itemView.findViewById(R.id.recFacts);
         recActivities = itemView.findViewById(R.id.recActivities);
         recLocation = itemView.findViewById(R.id.recLocation);
-
     }
-
 }

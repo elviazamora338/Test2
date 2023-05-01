@@ -115,12 +115,8 @@ public class UploadActivity extends AppCompatActivity {
     }
 
     public void saveData(){
-        if (uri == null) {
-            uploadData();
-            return;
-        }
         if (uploadTitle.getText().toString().isEmpty() ||
-                uploadDate.getText().toString().isEmpty()) {
+                uploadDate.getText().toString().isEmpty() || uri == null) {
             Toast.makeText(this, "Please fill in all required fields", Toast.LENGTH_SHORT).show();
             return;
         }
